@@ -383,7 +383,7 @@ main {
 .about_item img {
     width: 85%;
     margin: 0 auto 16px auto;
-    border-radius: 50%;
+    border-radius: 10%;
 }
 
 /* 徳之島の魅力について */
@@ -442,22 +442,16 @@ main {
 }
 
 .number {
-    position: relative;
     line-height: 1.3;
     font-size: 1rem;
     /* 18px */
     opacity: 0.7;
-    margin: 0 0 3px -16px;
+    padding: 3px 12px;
+    margin: 0 0 6px -16px;
+    border-radius: 12px 0 12px 0;
     display: inline-block;
-    /* transform: rotate(-3deg);
-    transform-origin: 0 0; */
-    color: #b35317b0;
-}
-
-.number::after {
-    content: "."counter(number1);
-    position: absolute;
-    right: -16px;
+    color: #fff;
+    background-color: #b35317;
 }
 
 /* ----- レビュー ----- */
@@ -946,6 +940,7 @@ input[type="radio"]:checked+.buy_select_item {
 
 .form_telephone h3 {
     display: inline-block;
+    /* line-height: 1.8; */
     font-size: 1.25rem;
     /* 20px */
 }
