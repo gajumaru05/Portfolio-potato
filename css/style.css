@@ -995,12 +995,12 @@ input[type="radio"]:checked+.buy_select_item {
     margin: 32px auto 0 auto;
 }
 
-.form_submit .submit {
+.submit {
     display: block;
     width: inherit;
     font-size: 0.875rem;
     /* 14px */
-    padding: 12px 32px;
+    padding: 9.5px 32px;
     border-radius: 36px;
     border: none;
     transition: .3s;
@@ -1008,7 +1008,7 @@ input[type="radio"]:checked+.buy_select_item {
     background-color: #354739;
 }
 
-.form_submit .submit:hover {
+.submit:hover {
     background-color: #bb7738;
 }
 
