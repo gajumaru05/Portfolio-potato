@@ -1004,6 +1004,13 @@ input[type="radio"]:checked+.buy_select_item {
     background-color: #354739;
 }
 
+/* Safari用 */
+_::-webkit-full-page-media,
+_:future,
+:root .submit {
+    padding: 9.5px 32px;
+}
+
 .submit:hover {
     background-color: #bb7738;
 }
@@ -1097,7 +1104,7 @@ input[type="radio"]:checked+.buy_select_item {
     width: 100%;
     margin-bottom: -4px;
     background-size: contain;
-    vertical-align: bottom;
+    /* vertical-align: bottom; */
 }
 
 /* フッター */
