@@ -945,13 +945,14 @@ input[type="radio"]:checked+.buy_select_item {
 }
 
 .form_telephone h3 {
+    display: inline-block;
     font-size: 1.25rem;
     /* 20px */
 }
 
-.form_telephone h3 img {
+.form_telephone img {
     display: inline-block;
-    vertical-align: sub;
+    vertical-align: text-top;
     width: 20px;
     height: 20px;
     margin: 0 8px 0 0;
@@ -1160,7 +1161,7 @@ input[type="radio"]:checked+.buy_select_item {
     width: 18px;
     height: 18px;
     margin-right: 4px;
-    vertical-align: sub;
+    vertical-align: text-top;
 }
 
 .site_map {
