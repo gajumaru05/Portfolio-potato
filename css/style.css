@@ -1090,6 +1090,7 @@ input[type="radio"]:checked+.buy_select_item {
 .footer_top_img {
     display: none;
     width: 100%;
+    margin-bottom: -4px;
     background-size: contain;
     vertical-align: bottom;
 }
@@ -1098,6 +1099,7 @@ input[type="radio"]:checked+.buy_select_item {
 .footer_top_sp_img {
     display: block;
     width: 100%;
+    margin-bottom: -4px;
     background-size: contain;
     vertical-align: bottom;
 }
