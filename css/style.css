@@ -951,7 +951,7 @@ input[type="radio"]:checked+.buy_select_item {
 
 .form_telephone h3 img {
     display: inline-block;
-    /* vertical-align: sub; */
+    vertical-align: sub;
     width: 20px;
     height: 20px;
     margin: 0 8px 0 0;
@@ -1148,12 +1148,11 @@ input[type="radio"]:checked+.buy_select_item {
 }
 
 .company_info a img {
-    display: block;
+    display: inline-block;
     width: inherit;
 }
 
 .company_info p {
-
     margin-bottom: 6px;
 }
 
