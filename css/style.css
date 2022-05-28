@@ -36,6 +36,7 @@ p {
 
 
 body {
+    font-feature-settings: "palt";
     width: 100%;
     background-color: #EFE7DB;
     color: #354739;
@@ -992,8 +993,6 @@ input[type="radio"]:checked+.buy_select_item {
 }
 
 input[type="submit"] {
-    -webkit-appearance: none;
-    /* safariの装飾初期化 */
     display: block;
     width: inherit;
     font-size: 0.875rem;
