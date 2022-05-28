@@ -1143,20 +1143,20 @@ input[type="submit"]:hover {
     margin: 0 auto 8px auto;
 }
 
+/* ロゴ */
 .company_info a img {
     display: inline-block;
     width: inherit;
 }
 
 .company_info p {
+    display: block;
     margin-bottom: 6px;
 }
 
-.company_info p img {
-    width: 18px;
-    height: 18px;
+/* 〒 */
+.company_info p span {
     margin-right: 4px;
-    vertical-align: text-top;
 }
 
 .site_map {
@@ -1568,7 +1568,7 @@ input[type="submit"]:hover {
     }
 
     .company_info a {
-        margin: 0 0 10px 32px;
+        margin: 0 0 10px 36px;
     }
 
     .site_map {
