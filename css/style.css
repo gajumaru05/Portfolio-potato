@@ -793,7 +793,12 @@ main {
 }
 
 .question_list h3 {
+    display: block;
     margin-bottom: 4px;
+}
+
+.question_list p {
+    display: inline-block;
 }
 
 /* ご注文 */
@@ -806,8 +811,11 @@ main {
     color: #838383;
 }
 
+.buy_wrap {
+    padding: 0 16px;
+}
+
 .buy_title {
-    width: 80%;
     margin: 0 auto 24px auto;
 }
 
@@ -832,18 +840,12 @@ main {
 
 .buy_item img {
     display: block;
-    width: 80%;
-    margin: 0 auto;
+    width: 100%;
     border-radius: 16px;
 }
 
-.buy_item .buy_select {
-    width: 80%;
-    margin: 0 auto;
-}
-
 .buy_select_btn {
-    padding: 24px;
+    padding: 24px 0;
 }
 
 .buy_select_btn li {
@@ -865,18 +867,14 @@ main {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 8px 24px;
+    padding: 9px 24px 7px 24px;
     border-radius: 8px;
-    opacity: 0.6;
     transition: .3s;
     cursor: pointer;
-    color: #fff;
-    background-color: #838383;
-}
-
-.buy_select_item:hover {
-    opacity: 1;
-    background: #bb7738;
+    background-color: #fff;
+    border: 1px solid #354739b0;
+    /* color: #fff;
+    background-color: #838383; */
 }
 
 .buy_select_item span p {
@@ -889,12 +887,16 @@ main {
     margin-right: 24px;
 }
 
-input[type="radio"]:checked+.buy_select_item {
-    opacity: 1;
-    background-color: #B35417;
-    /* マウス選択時の背景色を指定する */
+.buy_select_item:hover {
     color: #fff;
-    /* マウス選択時のフォント色を指定する */
+    background: #bb7738;
+    border: 1px solid #bb7738;
+}
+
+input[type="radio"]:checked+.buy_select_item {
+    color: #fff;
+    background-color: #B35417;
+    border: 1px solid #B35417;
 }
 
 .buy_stock {
@@ -1259,7 +1261,39 @@ input[type="submit"]:hover {
 
 }
 
-@media (max-width: 767px) {}
+@media (max-width: 767px) and (min-width: 501px) {
+
+
+    .buy_select_btn {
+        padding: 24px 0;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .buy_select_btn li {
+        width: 32%;
+    }
+
+    .buy_select_item {
+        display: block;
+        padding: 9px 8px 7px 12px;
+    }
+
+    .buy_stock {
+        display: block;
+    }
+
+    .buy_select_item span {
+        display: block;
+    }
+
+    .buy_select_item span h3 {
+        font-size: 1.125rem;
+        /* 18px */
+        margin-right: 0;
+    }
+
+}
 
 @media (min-width: 768px) {
 
@@ -1481,9 +1515,12 @@ input[type="submit"]:hover {
 
     /* ご注文 */
 
+    .buy_wrap {
+        padding: 0 24px;
+    }
+
     .buy_title {
-        width: 92%;
-        margin: 0 auto 28px auto;
+        margin: 0 4px 28px 4px;
     }
 
     .buy_item {
@@ -1497,11 +1534,12 @@ input[type="submit"]:hover {
     }
 
     .buy_item .buy_select {
-        width: 40%;
+        width: 45%;
+        padding: 0 16px;
     }
 
     .buy_select_btn {
-        padding: 0 24px 0 16px;
+        padding: 0;
     }
 
     .attention_msg {
@@ -1509,7 +1547,7 @@ input[type="submit"]:hover {
     }
 
     .attention_msg p {
-        line-height: 1;
+        line-height: 1.1;
     }
 
     /* お問い合わせ */
@@ -1596,13 +1634,8 @@ input[type="submit"]:hover {
         /* 22px */
     }
 
-    .buy_title {
-        width: 88%;
-    }
-
-    .buy_item {
-        width: 90%;
-        margin: 0 auto;
+    .buy_select_btn li:not(:last-child) {
+        margin-bottom: 12px;
     }
 
     .attention_msg {
