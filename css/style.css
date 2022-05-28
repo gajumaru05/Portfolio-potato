@@ -36,7 +36,6 @@ p {
 
 
 body {
-    font-feature-settings: "palt";
     width: 100%;
     background-color: #EFE7DB;
     color: #354739;
@@ -1525,12 +1524,13 @@ input[type="submit"]:hover {
 
     .buy_item {
         flex-direction: row;
+        justify-content: center;
         align-items: center;
     }
 
     .buy_item img {
         width: 55%;
-        max-width: 560px;
+        max-width: 520px;
     }
 
     .buy_item .buy_select {
@@ -1634,6 +1634,10 @@ input[type="submit"]:hover {
         /* 22px */
     }
 
+    .buy_title {
+        margin: 0 12px 28px 12px;
+    }
+
     .buy_select_btn li:not(:last-child) {
         margin-bottom: 12px;
     }
@@ -1641,6 +1645,7 @@ input[type="submit"]:hover {
     .attention_msg {
         margin-top: 24px;
     }
+
 }
 
 @media (min-width: 1400px) {
