@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 html {
-    font-size: 100%;
+    font-size: 95%;
     /* 1rem = 16px */
     font-family: 'M PLUS 1p', sans-serif;
 }
@@ -1335,9 +1335,9 @@ input[type="submit"]:hover {
 
 @media (min-width: 768px) {
 
-    /* html {
+    html {
         font-size: 100%;
-    } */
+    }
 
     body {
         background: url("../img/item/bg.svg") #EFE7DB;
