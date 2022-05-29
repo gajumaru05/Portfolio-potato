@@ -946,6 +946,7 @@ input[type="radio"]:checked+.buy_select_item {
 .form_telephone h3 {
     display: inline-block;
     /* line-height: 1.8; */
+    letter-spacing: 1px;
     font-size: 1.25rem;
     /* 20px */
 }
@@ -1025,7 +1026,7 @@ input[type="submit"]:hover {
     border-radius: 50%;
     margin: 0 8px 8px 0;
     background-color: #354739;
-    opacity: 0.8;
+    opacity: 0.9;
     transition: .3s;
 }
 
@@ -1155,8 +1156,20 @@ input[type="submit"]:hover {
 }
 
 .company_info p {
+    word-break: break-all;
+    /* 改行を回避 */
     display: block;
     margin-bottom: 6px;
+}
+
+/* 郵便番号 */
+.address_number {
+    letter-spacing: 2px;
+}
+
+/* 会社住所 */
+.address {
+    letter-spacing: .5px;
 }
 
 .site_map {
