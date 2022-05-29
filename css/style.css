@@ -257,6 +257,7 @@ main {
 .sub_title h2 {
     position: relative;
     width: 240px;
+    letter-spacing: 2px;
     margin: 0 auto;
 }
 
@@ -383,7 +384,7 @@ main {
 .about_item img {
     width: 100%;
     margin: 0 auto 16px auto;
-    border-radius: 10%;
+    border-radius: 50%;
 }
 
 /* 徳之島の魅力について */
@@ -583,8 +584,7 @@ main {
 
 /* slider */
 .slider {
-    width: 80%;
-    margin: 0 auto;
+    width: 100%;
     visibility: hidden;
     /* スライドの読み込みまで非表示 */
 }
@@ -617,8 +617,8 @@ main {
     width: inherit;
     padding: 0 0 10px 0;
     border-radius: 50%;
-    background-color: #354739;
-    color: #fff;
+    /* background-color: #354739; */
+    color: #354739;
     font-weight: bold;
     font-size: 2rem;
     /* 矢印の大きさ 32px */
@@ -1253,6 +1253,15 @@ input[type="submit"]:hover {
 @media (max-width: 767px) and (min-width: 500px) {
 
 
+    .about_item img {
+        width: 90%;
+    }
+
+    .about_text {
+        width: 90%;
+        margin: 0 auto;
+    }
+
     .buy_select_btn {
         padding: 24px 0;
         display: flex;
@@ -1284,10 +1293,22 @@ input[type="submit"]:hover {
 
 }
 
+@media (max-width: 767px) {
+
+    .item_reverse img {
+        margin: 0 auto;
+    }
+
+    .slider {
+        width: 85%;
+        margin: 0 auto;
+    }
+}
+
 @media (min-width: 768px) {
 
     /* html {
-        font-size: 102.5%;
+        font-size: 100%;
     } */
 
     body {
@@ -1391,6 +1412,11 @@ input[type="submit"]:hover {
         width: 100%;
     }
 
+    .sub_title h2 {
+        width: 320px;
+        letter-spacing: 8px;
+    }
+
     .sub_text {
         text-align: center;
     }
@@ -1443,19 +1469,16 @@ input[type="submit"]:hover {
     }
 
     .item_reverse img {
-        margin: 16px auto 0 0;
+        margin: 0 auto 0 0;
+        padding-top: 20px;
     }
 
     .item_reverse .about_text {
         width: 40%;
+        padding: 0;
     }
 
     /* レビュー */
-
-    .slider {
-        width: 90%;
-        margin: 0 auto;
-    }
 
     .slider_item {
         width: 32.5%;
