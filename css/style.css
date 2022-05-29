@@ -6,6 +6,10 @@ html {
     font-family: 'M PLUS 1p', sans-serif;
 }
 
+* {
+    -webkit-appearance: none;
+}
+
 .wrap {
     overflow: hidden;
 }
@@ -428,7 +432,7 @@ main {
 }
 
 .item_reverse {
-    margin: 64px auto;
+    margin: 56px auto;
 }
 
 .item_reverse .about_text li:nth-child(2) {
@@ -1464,17 +1468,19 @@ input[type="submit"]:hover {
         padding: 0 16px;
     }
 
+    /* こだわりの2つ目の項目 */
     .item_reverse {
         flex-flow: row-reverse;
     }
 
     .item_reverse img {
+        width: 50%;
         margin: 0 auto 0 0;
         padding-top: 20px;
     }
 
     .item_reverse .about_text {
-        width: 40%;
+        width: 38%;
         padding: 0;
     }
 
