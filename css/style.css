@@ -8,6 +8,7 @@ html {
 
 * {
     -webkit-appearance: none;
+    /* webkitの装飾なし */
 }
 
 .wrap {
@@ -1156,11 +1157,6 @@ input[type="submit"]:hover {
 .company_info p {
     display: block;
     margin-bottom: 6px;
-}
-
-/* 〒 */
-.company_info p span {
-    margin-right: 4px;
 }
 
 .site_map {
