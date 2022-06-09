@@ -39,7 +39,6 @@ p {
     line-height: 1.2;
 }
 
-
 body {
     width: 100%;
     background-color: #EFE7DB;
@@ -240,7 +239,7 @@ main {
 .top .top_sp {
     display: block;
     width: 100%;
-    border-radius: 8px;
+    border-radius: 12px;
     margin: 40px 0;
 }
 
@@ -306,7 +305,7 @@ main {
 
 .news_list {
     padding: 24px;
-    border-radius: 16px;
+    border-radius: 12px;
     background-color: #FAF2E8;
     box-shadow: 3px 3px 3px #35473920;
 }
@@ -416,9 +415,14 @@ main {
     margin: 0 auto;
 }
 
+.about_item img {
+    max-width: 400px;
+}
+
 .about_text {
     display: block;
     padding: 16px;
+    max-width: 370px;
     margin: 0 auto;
 }
 
@@ -430,6 +434,7 @@ main {
 
 .about_text p {
     color: #838383;
+    letter-spacing: 1px;
 }
 
 .item_reverse {
@@ -441,7 +446,8 @@ main {
 }
 
 .item_reverse .about_text h2 {
-    margin-bottom: 6px;
+    display: inline-block;
+    margin: 0 0 6px 8px;
 }
 
 .number {
@@ -680,7 +686,7 @@ main {
     margin: 0 auto;
     position: relative;
     box-shadow: 3px 3px 3px #35473920;
-    border-radius: 24px;
+    border-radius: 12px;
     background-color: #FAF2E8;
 }
 
@@ -692,7 +698,7 @@ main {
     display: block;
     width: 100%;
     margin: 0 auto;
-    border-radius: 24px;
+    border-radius: 12px;
 }
 
 .recipe ul li h3 {
@@ -715,7 +721,7 @@ main {
     background-color: #fff;
     border: 1px solid #35473975;
     width: 200px;
-    border-radius: 16px;
+    border-radius: 36px;
     padding: 5px 0;
     margin: 0 0 0 auto;
     text-align: center;
@@ -769,7 +775,7 @@ main {
     line-height: 1.3;
     margin: 12px auto 0 auto;
     padding: 2px 0 3px 0;
-    border-radius: 16px;
+    border-radius: 36px;
     background-color: #354739;
     color: #fff;
     text-align: center;
@@ -785,7 +791,7 @@ main {
     width: 80%;
     padding: 32px 24px;
     margin: 0 auto;
-    border-radius: 16px;
+    border-radius: 12px;
     background-color: #FAF2E8;
 }
 
@@ -843,7 +849,7 @@ main {
 .buy_item img {
     display: block;
     width: 100%;
-    border-radius: 16px;
+    border-radius: 12px;
 }
 
 .buy_select_btn {
@@ -870,7 +876,7 @@ main {
     justify-content: space-between;
     align-items: center;
     padding: 9px 24px 7px 24px;
-    border-radius: 8px;
+    border-radius: 12px;
     transition: .3s;
     cursor: pointer;
     background-color: #fff;
@@ -917,7 +923,7 @@ input[type="radio"]:checked+.buy_select_item {
 .contact form {
     width: 80%;
     padding: 40px 24px;
-    border-radius: 16px;
+    border-radius: 12px;
     margin: 0 auto;
     background-color: #FAF2E8;
 }
@@ -932,7 +938,7 @@ input[type="radio"]:checked+.buy_select_item {
     text-align: center;
     margin: 0 auto 36px auto;
     padding: 10px 16px 16px 16px;
-    border-radius: 16px;
+    border-radius: 12px;
     color: #fff;
     background-color: #715B47;
 }
@@ -981,7 +987,7 @@ input[type="radio"]:checked+.buy_select_item {
     font-size: 0.875rem;
     /* 14px */
     padding: 8px 16px;
-    border-radius: 8px;
+    border-radius: 12px;
     box-shadow: 3px 3px 3px #35473920;
 }
 
@@ -1194,7 +1200,7 @@ input[type="submit"]:hover {
     display: block;
     opacity: 0.7;
     padding: 4px 12px;
-    border-radius: 16px;
+    border-radius: 12px;
     transition: .3s;
 }
 
@@ -1324,7 +1330,11 @@ input[type="submit"]:hover {
 @media (max-width: 767px) {
 
     .item_reverse img {
-        margin: 0 auto;
+        margin: 0 auto 16px auto;
+    }
+
+    .about_text {
+        max-width: 420px;
     }
 
     .slider {
@@ -1428,7 +1438,7 @@ input[type="submit"]:hover {
         position: relative;
         display: block;
         width: 100%;
-        border-radius: 8px;
+        border-radius: 12px;
         margin: 40px 0;
     }
 
@@ -1482,6 +1492,7 @@ input[type="submit"]:hover {
 
     .about_item img {
         width: 45%;
+        /* max-width: 400px; */
         margin: 0 0 0 auto;
     }
 
